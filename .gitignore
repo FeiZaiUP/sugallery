@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtualenv
+.env/
+venv/
+ENV/
+.venv/
+env/
+
+# PyCharm project files
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and database files
+*.log
+*.sqlite3
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+sugallery/local_settings.py

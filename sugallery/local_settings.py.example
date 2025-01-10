@@ -1,0 +1,44 @@
+# local_settings.py.example
+# 这是一个示例配置文件，开发者需要复制并重命名为 local_settings.py
+
+# Debug 配置
+DEBUG = True
+
+# 数据库配置
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sugallery',
+        'USER': 'your_db_user',
+        'PASSWORD': 'your_db_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'connect_timeout': 60,
+        }
+    }
+}
+
+# 邮件配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'your-qq-email@qq.com'
+EMAIL_HOST_PASSWORD = 'your-smtp-password'
+DEFAULT_FROM_EMAIL = 'SuGallery <your-qq-email@qq.com>'
+
+# 密钥配置
+SECRET_KEY = 'your-secret-key'
+
+# 允许的主机
+ALLOWED_HOSTS = ['*']
+
+# 跨域配置
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8188",
+    "http://127.0.0.1:8188",
+]
+
+# 其他本地开发相关的配置...
